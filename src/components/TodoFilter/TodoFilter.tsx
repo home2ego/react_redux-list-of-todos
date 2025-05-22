@@ -21,9 +21,9 @@ export const TodoFilter: React.FC = () => {
             value={status}
             onChange={e => dispatch(changeStatus(e.target.value as Status))}
           >
-            {['All', 'Active', 'Completed'].map(el => (
-              <option key={el} value={el.toLowerCase()}>
-                {el}
+            {['all', 'active', 'completed'].map(el => (
+              <option key={el} value={el}>
+                {el[0].toUpperCase() + el.substring(1)}
               </option>
             ))}
           </select>

@@ -123,7 +123,7 @@ module.exports = {
   },
   ignorePatterns: [
     'dist',
-    '.eslintrc.cjs',
+    // '.eslintrc.cjs',
     'vite.config.ts',
     'src/vite-env.d.ts',
     'cypress',
