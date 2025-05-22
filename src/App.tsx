@@ -20,7 +20,7 @@ export const App = () => {
 
   useEffect(() => {
     getTodos().then(todosFromServer => dispatch(loadTodos(todosFromServer)));
-  }, []);
+  }, [dispatch]);
 
   const filteredTodos = getFilteredTodos(todos, { query, status });
 

@@ -26,7 +26,7 @@ export const TodoModal: React.FC = () => {
         phone: userFromServer.phone,
       }),
     );
-  }, []);
+  }, [userId]);
 
   const name = user?.name;
   const email = user?.email;
